@@ -4,17 +4,26 @@
 name: Node.js CI
 
 on: [push]
-
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    name: Deploy
+    permissions:
+      contents: read
+      deployments: write
+    name: Deploy to Cloudflare Pages
     steps:
-      - uses: actions/checkout@v3
-      - name: Deploy
-        uses: cloudflare/wrangler-action@v3
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      # Run your project's build step
+      - name: Build
+        run: npm install && npm run build
+
+      - name: Publish
+        uses: cloudflare/pages-action@1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          command: pages deploy --project-name=jamesetchells
-          workingDirectory: .vercel/output/static
+          projectName: 'jamesetchells' # e.g. 'my-project'
+          directory: '.vercel/output/static' # e.g. 'dist'
+          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
