@@ -25,11 +25,5 @@ jobs:
       # Run your project's build step
       - name: Build
         run: npm ci && npm run build
-      - name: Publish
-        uses: cloudflare/pages-action@1
-        with:
-          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: 'jamesetchells'
-          directory: 'public'
-          gitHubToken: ${{ secrets.GITHUB_TOKEN }}
+      - name: Deploy
+        run: npm run pages:deploy
