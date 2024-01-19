@@ -1,0 +1,14 @@
+{
+  "operationType": "ISR",
+  "handler": "___next_launcher.cjs",
+  "runtime": "nodejs20.x",
+  "environment": {},
+  "supportsMultiPayloads": true,
+  "framework": {
+    "slug": "nextjs",
+    "version": "14.0.4"
+  },
+  "launcherType": "Nodejs",
+  "shouldAddHelpers": false,
+  "shouldAddSourcemapSupport": false
+}
