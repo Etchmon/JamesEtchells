@@ -1,33 +1,35 @@
-name: Deploy to Cloudflare Pages
+# This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
+
+name: Node.js CI
 
 on:
   push:
-    branches:
-      - main
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
+
   deploy:
+
     runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      deployments: write
+    name: Deploy to Cloudflare Pages
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-
-      - name: Install and Build
-        run: |
-          npm ci
-          npm run build
-
-      - name: Deploy
-        uses: cloudflare/pages-actions@v2
+        uses: actions/checkout@v3
+      # Run your project's build step
+      - name: Build
+        run: npm ci && npm run build
+      - name: Publish
+        uses: cloudflare/pages-action@1
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: jamesetchells
-          directory: YOUR_BUILD_OUTPUT_DIRECTORY
-          # Optional: Enable this if you want to have GitHub Deployments triggered
+          projectName: 'jamesetchells.com '
+          directory: 'public'
           gitHubToken: ${{ secrets.GITHUB_TOKEN }}
-          # Optional: Switch what branch you are publishing to.
-          # By default this will be the branch which triggered this workflow
-          branch: main
-          # Optional: Change the Wrangler version, allows you to point to a specific version or a tag such as `beta`
-          wranglerVersion: '3'
