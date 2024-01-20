@@ -17,7 +17,7 @@ export default function Home() {
             linux
           </p>
         </div>
-        <ul className="ml-1 mt-8 flex items-center text-frost-3">
+        <ul className="ml-1 mt-8 flex items-center">
           {/* Social Media Links */}
           <li className="mr-5 text-xs">Icon</li>
           <li className="mr-5 text-xs">Icon</li>

@@ -3,7 +3,7 @@
   "expiration": false,
   "sourcePath": "/",
   "group": 2,
-  "bypassToken": "ff472735cbcbc744a3edc30f7815e7d5",
+  "bypassToken": "d8e2ea03628e923f616214fe2daf9226",
   "experimentalBypassFor": [
     {
       "type": "header",
