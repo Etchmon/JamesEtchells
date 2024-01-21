@@ -34,6 +34,12 @@ export default function Home() {
           <h2 className="text-sm font-bold uppercase tracking-widest  text-white-1">
             ABOUT
           </h2>
+          <p className="mt-4 max-w-xs leading-normal text-frost-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
+            provident incidunt illum assumenda ea minima blanditiis perspiciatis
+            amet aliquam corrupti, iure libero obcaecati esse! In reprehenderit
+            accusamus inventore tempore similique?
+          </p>
         </section>
         <section>{/* Projects */}</section>
         <section>{/* Contact */}</section>
