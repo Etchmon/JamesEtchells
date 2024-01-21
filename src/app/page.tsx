@@ -19,10 +19,10 @@ export default function Home() {
         </div>
         <ul className="ml-1 mt-8 flex items-center text-frost-3">
           {/* Social Media Links */}
-          <li className="mr-5 text-xs">Icon</li>
-          <li className="mr-5 text-xs">Icon</li>
-          <li className="mr-5 text-xs">Icon</li>
-          <li className="mr-5 text-xs">Icon</li>
+          <li className="mr-5 text-xs">test</li>
+          <li className="mr-5 text-xs">test</li>
+          <li className="mr-5 text-xs">test</li>
+          <li className="mr-5 text-xs">test</li>
         </ul>
       </header>
       <article className="pt-24 lg:w-1/2 lg:py-24">
