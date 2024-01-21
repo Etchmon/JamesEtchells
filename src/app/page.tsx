@@ -2,7 +2,7 @@ import Image from "next/image"
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen max-w-screen-xl bg-dark-1 mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
+    <main className="lg:flex lg:gap-4 lg:justify-between  min-h-screen max-w-screen-xl mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
       <header>
         {/* Header */}
         <div>
@@ -17,7 +17,7 @@ export default function Home() {
             linux
           </p>
         </div>
-        <ul className="ml-1 mt-8 flex items-center text-frost-3">
+        <ul className="ml-1 mt-8 flex items-center text-white-1">
           {/* Social Media Links */}
           <li className="mr-5 text-xs">Icon</li>
           <li className="mr-5 text-xs">Icon</li>
@@ -25,8 +25,16 @@ export default function Home() {
           <li className="mr-5 text-xs">Icon</li>
         </ul>
       </header>
-      <article>
-        <section>{/* About */}</section>
+      <article className="pt-24 lg:w-1/2 lg:py-24">
+        <section
+          className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+          id="about"
+        >
+          {/* About */}
+          <h2 className="text-sm font-bold uppercase tracking-widest  text-frost-3">
+            ABOUT
+          </h2>
+        </section>
         <section>{/* Projects */}</section>
         <section>{/* Contact */}</section>
       </article>
