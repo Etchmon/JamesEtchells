@@ -17,7 +17,7 @@ export default function Home() {
             linux
           </p>
         </div>
-        <ul className="ml-1 mt-8 flex items-center text-white-1">
+        <ul className="ml-1 mt-8 flex items-center text-frost-3">
           {/* Social Media Links */}
           <li className="mr-5 text-xs">Icon</li>
           <li className="mr-5 text-xs">Icon</li>
@@ -31,7 +31,7 @@ export default function Home() {
           id="about"
         >
           {/* About */}
-          <h2 className="text-sm font-bold uppercase tracking-widest  text-frost-3">
+          <h2 className="text-sm font-bold uppercase tracking-widest  text-white-1">
             ABOUT
           </h2>
         </section>
