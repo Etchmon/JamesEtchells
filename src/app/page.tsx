@@ -41,7 +41,80 @@ export default function Home() {
             accusamus inventore tempore similique?
           </p>
         </section>
-        <section>{/* Projects */}</section>
+        <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+          {/* Projects */}
+          <h2 className="text-sm font-bold uppercase tracking-widest  text-white-1 mb-2">
+            PROJECTS
+          </h2>
+          <ul className="mt-4">
+            <li className="mb-12">
+              <div className="grid sm:grid-cols-8 pb-1">
+                <div className="col-span-2">
+                  <Image
+                    src="/images/placeholder.png"
+                    alt="Placeholder"
+                    width={100}
+                    height={100}
+                  />
+                </div>
+                <div className="col-span-6">
+                  <h3 className="text-sm font-bold text-white-1">Project</h3>
+                  <p className="mt-2 text-frost-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat provident incidunt illum assumenda ea minima
+                    blanditiis perspiciatis amet aliquam corrupti, iure libero
+                    obcaecati esse! In reprehenderit accusamus inventore tempore
+                    similique?
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li className="mb-12">
+              <div className="grid sm:grid-cols-8 pb-1">
+                <div className="col-span-2">
+                  <Image
+                    src="/images/placeholder.png"
+                    alt="Placeholder"
+                    width={100}
+                    height={100}
+                  />
+                </div>
+                <div className="col-span-6">
+                  <h3 className="text-sm font-bold text-white-1">Project</h3>
+                  <p className="mt-2 text-frost-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat provident incidunt illum assumenda ea minima
+                    blanditiis perspiciatis amet aliquam corrupti, iure libero
+                    obcaecati esse! In reprehenderit accusamus inventore tempore
+                    similique?
+                  </p>
+                </div>
+              </div>
+            </li>
+            <li className="mb-12">
+              <div className="grid sm:grid-cols-8 pb-1">
+                <div className="col-span-2">
+                  <Image
+                    src="/images/placeholder.png"
+                    alt="Placeholder"
+                    width={100}
+                    height={100}
+                  />
+                </div>
+                <div className="col-span-6">
+                  <h3 className="text-sm font-bold text-white-1">Project</h3>
+                  <p className="mt-2 text-frost-3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat provident incidunt illum assumenda ea minima
+                    blanditiis perspiciatis amet aliquam corrupti, iure libero
+                    obcaecati esse! In reprehenderit accusamus inventore tempore
+                    similique?
+                  </p>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </section>
         <section>{/* Contact */}</section>
       </article>
       <footer>{/* Footer */}</footer>
