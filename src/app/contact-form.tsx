@@ -40,7 +40,7 @@ function ContactForm() {
           name="name"
           value={formState.name}
           onChange={handleInputChange}
-          className="rounded-sm p-1"
+          className="rounded-sm p-1 bg-white-1"
           placeholder="Name"
         />
       </label>
@@ -51,7 +51,7 @@ function ContactForm() {
           name="email"
           value={formState.email}
           onChange={handleInputChange}
-          className="rounded-sm p-1"
+          className="rounded-sm p-1 bg-white-1"
           placeholder="Email"
         />
       </label>
@@ -61,7 +61,7 @@ function ContactForm() {
           name="message"
           value={formState.message}
           onChange={handleInputChange}
-          className="textarea textarea-primary rounded-sm p-1"
+          className="textarea textarea-primary rounded-sm p-1 bg-white-1"
           placeholder="Message"
         />
       </label>
