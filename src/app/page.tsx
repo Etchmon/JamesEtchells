@@ -32,17 +32,17 @@ export default function Home() {
 
       setTimeout(() => {
         if (intro) {
-          intro.style.top = "-100vh"
+          intro.style.opacity = "0"
         }
-      }, 2300)
+      }, 2200)
     })
   }, [])
   return (
     <main className="lg:flex lg:gap-4 lg:justify-between  min-h-screen max-w-screen-xl mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 relative">
       <div className="intro" id="intro">
         <h1 className="logo-header text-4xl sm:text-5xl">
-          <span className="logo">jamesetchells</span>
-          <span className="logo">.com</span>
+          <span className="logo text-frost-2">jamesetchells</span>
+          <span className="logo text-aurora-3">.com</span>
         </h1>
       </div>
       <header className="relative">
