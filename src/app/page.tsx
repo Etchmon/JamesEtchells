@@ -1,11 +1,50 @@
 "use client"
 
+import { useEffect } from "react"
 import Image from "next/image"
 import ContactForm from "./contact-form"
 
 export default function Home() {
+  useEffect(() => {
+    let intro: HTMLElement | null = document.getElementById("intro")
+    let logo: HTMLElement | null = document.querySelector(".logo-header")
+    let logoSpan: NodeListOf<HTMLElement> = document.querySelectorAll(".logo")
+
+    setTimeout(() => {
+      logoSpan.forEach((span, idx) => {
+        setTimeout(
+          () => {
+            span.classList.add("active")
+          },
+          (idx + 1) * 400,
+        )
+      })
+
+      setTimeout(() => {
+        logoSpan.forEach((span, idx) => {
+          setTimeout(() => {
+            span.classList.remove("active")
+            span.classList.add("fade")
+          }),
+            (idx + 1) * 50
+        })
+      }, 2000)
+
+      setTimeout(() => {
+        if (intro) {
+          intro.style.top = "-100vh"
+        }
+      }, 2300)
+    })
+  }, [])
   return (
     <main className="lg:flex lg:gap-4 lg:justify-between  min-h-screen max-w-screen-xl mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 relative">
+      <div className="intro" id="intro">
+        <h1 className="logo-header text-4xl sm:text-5xl">
+          <span className="logo">jamesetchells</span>
+          <span className="logo">.com</span>
+        </h1>
+      </div>
       <header className="relative">
         {/* Header */}
         <div>
