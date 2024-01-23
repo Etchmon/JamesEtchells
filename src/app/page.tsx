@@ -1,4 +1,7 @@
+"use client"
+
 import Image from "next/image"
+import ContactForm from "./contact-form"
 
 export default function Home() {
   return (
@@ -115,7 +118,13 @@ export default function Home() {
             </li>
           </ul>
         </section>
-        <section>{/* Contact */}</section>
+        <section>
+          {/* Contact */}
+          <h2 className="text-sm font-bold uppercase tracking-widest  text-white-1 mb-2">
+            CONTACT
+          </h2>
+          <ContactForm />
+        </section>
       </article>
       <footer>{/* Footer */}</footer>
     </main>
