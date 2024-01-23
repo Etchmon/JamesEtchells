@@ -4,26 +4,100 @@
 
 /* Fonts */
 @font-face {
-  font-family: 'Julius Sans One';
-  src: url('../../public/fonts/JuliusSansOne-Regular.ttf') format('truetype');
+  font-family: "Julius Sans One";
+  src: url("../../public/fonts/JuliusSansOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'Crimson Text';
-  src: url('../../public/fonts/CrimsonText-Regular.ttf') format('truetype');
+  font-family: "Crimson Text";
+  src: url("../../public/fonts/CrimsonText-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 body {
-    font-family: 'Crimson Text', serif;
+  font-family: "Crimson Text", serif;
+
+  background-image: url("/images/ign_dudeOnBuilding3.png");
+  background-attachment: fixed;
+  background-size: cover;
+  position: relative;
+
+  transition: transform 500ms cubic-bezier(0.13, 0.53, 0.38, 0.97);
+  animation: pan-image 200s linear infinite;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Julius Sans One', sans-serif;
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(46, 52, 64, 0.9);
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Julius Sans One", sans-serif;
+}
+
+@keyframes pan-image {
+  0% {
+    background-position: 21% 92%;
+    background-size: 350%;
+  }
+
+  20% {
+    background-position: 35% 84%;
+    background-size: 350%;
+  }
+  /* View 2 */
+  20.0001% {
+    background-position: 72% 5%;
+    background-size: 300%;
+  }
+
+  40% {
+    background-position: 57% 17%;
+    background-size: 300%;
+  }
+  /* View 3 */
+  40.0001% {
+    background-position: 15% 24%;
+    background-size: 200%;
+  }
+
+  60% {
+    background-position: 30% 37%;
+    background-size: 200%;
+  }
+  /* View 4 */
+  60.0001% {
+    background-position: 46% 100%;
+    background-size: 350%;
+  }
+
+  80% {
+    background-position: 32% 80%;
+    background-size: 350%;
+  }
+  /* View 5 */
+  80.0001% {
+    background-position: 20% 30%;
+    background-size: 200%;
+  }
+
+  100% {
+    background-position: 21% 70%;
+    background-size: 200%;
+  }
+}

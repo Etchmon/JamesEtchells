@@ -5,8 +5,8 @@ import ContactForm from "./contact-form"
 
 export default function Home() {
   return (
-    <main className="lg:flex lg:gap-4 lg:justify-between  min-h-screen max-w-screen-xl mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0">
-      <header>
+    <main className="lg:flex lg:gap-4 lg:justify-between  min-h-screen max-w-screen-xl mx-auto px-6 py-12 md:px-12 md:py-20 lg:px-24 lg:py-0 relative">
+      <header className="relative">
         {/* Header */}
         <div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white-1">
@@ -30,8 +30,8 @@ export default function Home() {
       </header>
       <article className="pt-24 lg:w-1/2 lg:py-24">
         <section
-          className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
           id="about"
+          className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
         >
           {/* About */}
           <h2 className="text-sm font-bold uppercase tracking-widest  text-white-1">
@@ -44,7 +44,10 @@ export default function Home() {
             accusamus inventore tempore similique?
           </p>
         </section>
-        <section className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24">
+        <section
+          id="projects"
+          className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+        >
           {/* Projects */}
           <h2 className="text-sm font-bold uppercase tracking-widest  text-white-1 mb-2">
             PROJECTS
@@ -54,9 +57,9 @@ export default function Home() {
               <div className="grid sm:grid-cols-8 pb-1">
                 <div className="col-span-2">
                   <Image
-                    src="/images/placeholder.png"
+                    src="/images/10.png"
                     alt="Placeholder"
-                    width={100}
+                    width={200}
                     height={100}
                   />
                 </div>
@@ -76,9 +79,9 @@ export default function Home() {
               <div className="grid sm:grid-cols-8 pb-1">
                 <div className="col-span-2">
                   <Image
-                    src="/images/placeholder.png"
+                    src="/images/16.png"
                     alt="Placeholder"
-                    width={100}
+                    width={200}
                     height={100}
                   />
                 </div>
@@ -98,9 +101,9 @@ export default function Home() {
               <div className="grid sm:grid-cols-8 pb-1">
                 <div className="col-span-2">
                   <Image
-                    src="/images/placeholder.png"
+                    src="/images/39.png"
                     alt="Placeholder"
-                    width={100}
+                    width={200}
                     height={100}
                   />
                 </div>
@@ -118,15 +121,26 @@ export default function Home() {
             </li>
           </ul>
         </section>
-        <section>
+        <section
+          id="contact"
+          className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
+        >
           {/* Contact */}
           <h2 className="text-sm font-bold uppercase tracking-widest  text-white-1 mb-2">
             CONTACT
           </h2>
           <ContactForm />
         </section>
+        <footer className="pb-16 sm:pb-1 text-sm text-frost-3 max-w-md">
+          {/* Footer */}
+          <p>
+            Design loosly based off every other portfolio website, coded in
+            Visual Studio Code by me. Built with Next.js and Tailwind CSS,
+            deployed via CI/CD pipeline using Github Actions and Wrangler to
+            Cloudflare Pages. Fonts used are Julius Sans One and Crimson Text.
+          </p>
+        </footer>
       </article>
-      <footer>{/* Footer */}</footer>
     </main>
   )
 }
