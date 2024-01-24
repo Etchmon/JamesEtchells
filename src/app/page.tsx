@@ -33,6 +33,7 @@ export default function Home() {
       setTimeout(() => {
         if (intro) {
           intro.style.opacity = "0"
+          intro.style.zIndex = "-1"
         }
       }, 2200)
     })
@@ -178,6 +179,13 @@ export default function Home() {
           </p>
         </footer>
       </article>
+      {/* <Image
+        src="/images/etch.jpeg"
+        alt="Placeholder"
+        width={30}
+        height={30}
+        className="absolute bottom-0 right-0 animate-pulse sm:bottom-10 sm:right-10"
+      ></Image> */}
     </main>
   )
 }
