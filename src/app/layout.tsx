@@ -1,5 +1,6 @@
 import type { Metadata } from "next"
 import "./globals.css"
+import { Toaster } from "react-hot-toast"
 
 export const metadata: Metadata = {
   title: "James Etchells | Portfolio",
@@ -14,7 +15,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-dark-1">{children}</body>
+      <body className="bg-dark-1">
+        <Toaster position="top-center" toastOptions={{ duration: 3000 }} />
+        {children}
+      </body>
     </html>
   )
 }

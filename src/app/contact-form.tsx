@@ -1,4 +1,5 @@
 import React, { ChangeEvent, FormEvent, useState } from "react"
+import { toast } from "react-hot-toast"
 
 interface FormState {
   name: string
@@ -22,10 +23,39 @@ function ContactForm() {
     })
   }
 
-  const handleSubmit = (event: FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    console.log(formState)
-    // Here you would typically send the form data to your server
+
+    const formState = {
+      fullName: (event.target as any).name.value,
+      email: (event.target as any).email.value,
+      message: (event.target as any).message.value,
+    }
+
+    try {
+      const response = await fetch("/api/send", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
+      })
+
+      const data = await response.json()
+
+      if (response.status === 200) {
+        setFormState({
+          name: "",
+          email: "",
+          message: "",
+        })
+        toast.success(`${formState.fullName}, your message has been sent!`)
+      } else {
+        toast.error(`Error: ${(data as { message: string }).message}`) // Show an error message
+      }
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   return (
