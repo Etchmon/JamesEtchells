@@ -45,7 +45,7 @@ export default function Home() {
           <span className="logo text-aurora-3">.com</span>
         </h1>
       </div>
-      <header className="relative">
+      <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 relative">
         {/* Header */}
         <div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white-1">
@@ -93,16 +93,15 @@ export default function Home() {
           </h2>
           <ul className="mt-4">
             <li className="mb-12">
-              <div className="grid sm:grid-cols-8 pb-1">
-                <div className="col-span-2">
-                  <Image
-                    src="/images/10.png"
-                    alt="Placeholder"
-                    width={200}
-                    height={100}
-                  />
-                </div>
-                <div className="col-span-6">
+              <div className="relative grid sm:grid-cols-8 pb-1 gap-4 sm:gap-8 md:gap-4">
+                <Image
+                  src="/images/10.png"
+                  alt="Placeholder"
+                  width={200}
+                  height={100}
+                  className="sm:col-span-2 sm:order-1 sm:translate-y-1"
+                />
+                <div className="sm:col-span-6 sm:order-2">
                   <h3 className="text-sm font-bold text-white-1">Project</h3>
                   <p className="mt-2 text-frost-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -115,16 +114,15 @@ export default function Home() {
               </div>
             </li>
             <li className="mb-12">
-              <div className="grid sm:grid-cols-8 pb-1">
-                <div className="col-span-2">
-                  <Image
-                    src="/images/16.png"
-                    alt="Placeholder"
-                    width={200}
-                    height={100}
-                  />
-                </div>
-                <div className="col-span-6">
+              <div className="relative grid sm:grid-cols-8 pb-1 gap-4 sm:gap-8 md:gap-4">
+                <Image
+                  src="/images/16.png"
+                  alt="Placeholder"
+                  width={200}
+                  height={100}
+                  className="sm:col-span-2 sm:order-1 sm:translate-y-1"
+                />
+                <div className="sm:col-span-6 sm:order-2">
                   <h3 className="text-sm font-bold text-white-1">Project</h3>
                   <p className="mt-2 text-frost-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -137,16 +135,16 @@ export default function Home() {
               </div>
             </li>
             <li className="mb-12">
-              <div className="grid sm:grid-cols-8 pb-1">
-                <div className="col-span-2">
-                  <Image
-                    src="/images/39.png"
-                    alt="Placeholder"
-                    width={200}
-                    height={100}
-                  />
-                </div>
-                <div className="col-span-6">
+              <div className="relative grid sm:grid-cols-8 pb-1 gap-4 sm:gap-8 md:gap-4">
+                <Image
+                  src="/images/39.png"
+                  alt="Placeholder"
+                  width={200}
+                  height={100}
+                  className="sm:col-span-2 sm:order-1 sm:translate-y-1"
+                />
+
+                <div className="sm:col-span-6 sm:order-2">
                   <h3 className="text-sm font-bold text-white-1">Project</h3>
                   <p className="mt-2 text-frost-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
