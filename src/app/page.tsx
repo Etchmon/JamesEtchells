@@ -45,7 +45,7 @@ export default function Home() {
           <span className="logo text-aurora-3">.com</span>
         </h1>
       </div>
-      <header className="relative">
+      <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 relative">
         {/* Header */}
         <div>
           <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white-1">
