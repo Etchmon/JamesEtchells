@@ -1,4 +1,5 @@
 import React, { ChangeEvent, FormEvent, useState } from "react"
+import { toast } from "react-hot-toast"
 
 interface FormState {
   name: string
@@ -22,10 +23,35 @@ function ContactForm() {
     })
   }
 
-  const handleSubmit = (event: FormEvent) => {
+  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    console.log(formState)
-    // Here you would typically send the form data to your server
+
+    const { name, email, message } = formState
+
+    try {
+      const response = await fetch("/api/send/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ name, email, message }),
+      })
+
+      const data = await response.json()
+
+      if (response.status === 200) {
+        toast.success(`${formState.name}, your message has been sent!`)
+        setFormState({
+          name: "",
+          email: "",
+          message: "",
+        })
+      } else {
+        toast.error(`Error: ${(data as { message: string }).message}`) // Show an error message
+      }
+    } catch (error) {
+      console.error(error)
+    }
   }
 
   return (
@@ -33,7 +59,7 @@ function ContactForm() {
       onSubmit={handleSubmit}
       className="flex items-center flex-col gap-6 text-frost-3 mb-16"
     >
-      <label className="flex flex-col w-1/2 gap-1">
+      <label className="flex flex-col w-3/4 gap-1">
         Full Name
         <input
           type="text"
@@ -44,7 +70,7 @@ function ContactForm() {
           placeholder="Name"
         />
       </label>
-      <label className="flex flex-col w-1/2 gap-1">
+      <label className="flex flex-col w-3/4 gap-1">
         Email
         <input
           type="email"
@@ -55,7 +81,7 @@ function ContactForm() {
           placeholder="Email"
         />
       </label>
-      <label className="flex flex-col w-1/2 gap-1">
+      <label className="flex flex-col w-3/4 gap-1">
         Message
         <textarea
           name="message"
@@ -67,7 +93,7 @@ function ContactForm() {
       </label>
       <button
         type="submit"
-        className="w-1/2 text-white-3 bg-aurora-1 round-sm p-1 uppercase font-extrabold tracking-widest"
+        className="w-3/4 text-white-3 bg-aurora-1 round-sm p-1 uppercase font-extrabold tracking-widest"
       >
         Submit
       </button>
