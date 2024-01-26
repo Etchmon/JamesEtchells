@@ -4,11 +4,14 @@ import { NextRequest, NextResponse } from "next/server"
 import * as React from "react"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
+
 type BodyType = {
   name: string
   email: string
   message: string
 }
+
+export const runtime = "edge"
 
 export async function POST(req: NextRequest) {
   const body: BodyType = await req.json()
