@@ -29,7 +29,7 @@ function ContactForm() {
     const { name, email, message } = formState
 
     try {
-      const response = await fetch("/api/send/", {
+      const response = await fetch("https://jamesetchells.com/email_send", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
