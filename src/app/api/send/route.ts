@@ -1,22 +1,32 @@
 import { EmailTemplate } from "../../email-template"
 import { Resend } from "resend"
-import { NextResponse } from "next/server"
+import { NextRequest, NextResponse } from "next/server"
 import * as React from "react"
 
 const resend = new Resend(process.env.RESEND_API_KEY)
+type BodyType = {
+  name: string
+  email: string
+  message: string
+}
 
-export async function POST(req: any) {
-  const { fullName, message } = req.body
+export async function POST(req: NextRequest) {
+  const body: BodyType = await req.json()
+  const { name, email, message } = body as BodyType
   try {
     const { data, error } = await resend.emails.send({
-      from: `${fullName} <etch@jamesetchells.com>`,
+      from: `${name} <etch@jamesetchells.com>`,
       to: ["etch.rush@gmail.com"],
-      subject: "Test2",
-      react: EmailTemplate({ fullName, message }) as React.ReactElement,
+      subject: "New message from your website",
+      react: EmailTemplate({
+        name: name,
+        email: email,
+        message: message,
+      }) as React.ReactElement,
     })
 
-    return NextResponse.json({ data, message: "Email sent" })
+    return Response.json(data)
   } catch (error) {
-    return NextResponse.json({ error })
+    return Response.json({ error })
   }
 }

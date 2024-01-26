@@ -26,30 +26,26 @@ function ContactForm() {
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const formState = {
-      fullName: (event.target as any).name.value,
-      email: (event.target as any).email.value,
-      message: (event.target as any).message.value,
-    }
+    const { name, email, message } = formState
 
     try {
-      const response = await fetch("/api/send", {
+      const response = await fetch("/api/send/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formState),
+        body: JSON.stringify({ name, email, message }),
       })
 
       const data = await response.json()
 
       if (response.status === 200) {
+        toast.success(`${formState.name}, your message has been sent!`)
         setFormState({
           name: "",
           email: "",
           message: "",
         })
-        toast.success(`${formState.fullName}, your message has been sent!`)
       } else {
         toast.error(`Error: ${(data as { message: string }).message}`) // Show an error message
       }
