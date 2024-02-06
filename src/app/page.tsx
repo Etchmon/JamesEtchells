@@ -216,7 +216,7 @@ export default function Home() {
                   <h3 className="text-md font-bold text-white-1">
                     Etchmon Acid VS Code Theme
                   </h3>
-                  <p className="mt-2 text-frost-3">
+                  <p className="mt-2 text-frost-3 text-sm">
                     A custom VS Code theme using high contrast colors on a dark
                     theme to emphasize readability and lessen eye strain. It is
                     available on VS Code MarketPlace and is continually being
@@ -258,7 +258,7 @@ export default function Home() {
                   <h3 className="text-md font-bold text-white-1">
                     Real Game Athletics App
                   </h3>
-                  <p className="mt-2 text-frost-3">
+                  <p className="mt-2 text-frost-3 text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Repellat provident incidunt illum assumenda ea minima
                     blanditiis perspiciatis amet aliquam corrupti, iure libero
@@ -292,7 +292,7 @@ export default function Home() {
                   <h3 className="text-md font-bold text-white-1">
                     Jamesetchells.com
                   </h3>
-                  <p className="mt-2 text-frost-3">
+                  <p className="mt-2 text-frost-3 text-sm">
                     My personal website, deployed on Cloudflare Pages with DNS
                     redirects to my custom domain name. Developed using Next.js
                     and Tailwind CSS and implements a GitHub Actions CI/CD
@@ -354,7 +354,7 @@ export default function Home() {
           </h2> */}
         {/* <ContactForm /> */}
         {/* </section> */}
-        <footer className="sm:pb-1 pb-16 text-sm text-frost-3 max-w-md">
+        <footer className="sm:pb-1 pb-16 text-xs text-frost-3 max-w-md">
           {/* Footer */}
           <p>
             Design loosly based off every other portfolio website, coded in
