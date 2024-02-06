@@ -2,7 +2,6 @@
 
 import { useEffect } from "react"
 import Image from "next/image"
-import ContactForm from "./contact-form"
 
 export default function Home() {
   // Splash screen animation
@@ -50,15 +49,15 @@ export default function Home() {
       <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 relative">
         {/* Header */}
         <div>
-          <h1 className="text-4xl sm:text-5xl font-bold tracking-tight text-white-1">
+          <h1 className="sm:text-4xl md:text-5xl font-bold tracking-tight text-white-1">
             James Etchells
           </h1>
-          <h2 className="mt-3 text-lg font-medium tracking-tight sm:text-xl text-white-2">
+          <h2 className="sm:text-xl md:text-3xl  mt-3 font-medium tracking-tight text-white-2">
             Full-Stack Developer
           </h2>
           <p className="mt-4 max-w-xs leading-normal text-frost-3">
-            I build full-stack applications, design CI/CD pipelines, and love
-            linux
+            I build full-stack applications, create CI/CD pipelines, and love
+            linux.
           </p>
         </div>
         <ul className="ml-1 mt-8 flex items-center text-frost-3">
@@ -126,12 +125,12 @@ export default function Home() {
           </li>
           <li className="mr-5 text-xs">
             <a
-              href="/resume/Resume_JamesEtchells.pdf"
+              href="/resume/jamesetchells_resume.pdf"
               className="block hover:text-aurora-3"
               target="_blank"
               rel="noreferrer noopener"
               aria-label="Resume/CV (opens in a new tab)"
-              title="CV"
+              title="Resume/CV"
             >
               <svg
                 className="w-8 h-8 text-gray-800 dark:text-white"
@@ -142,9 +141,9 @@ export default function Home() {
               >
                 <path
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   d="M15 9h3m-3 3h3m-3 3h3m-6 1c-.3-.6-1-1-1.6-1H7.6c-.7 0-1.3.4-1.6 1M4 5h16c.6 0 1 .4 1 1v12c0 .6-.4 1-1 1H4a1 1 0 0 1-1-1V6c0-.6.4-1 1-1Zm7 5a2 2 0 1 1-4 0 2 2 0 0 1 4 0Z"
                 />
               </svg>
@@ -158,14 +157,35 @@ export default function Home() {
           className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
         >
           {/* About */}
-          <h2 className="text-sm font-bold uppercase tracking-widest  text-white-1">
+          <h2 className="text-xl font-bold uppercase tracking-widest  text-white-1">
             ABOUT
           </h2>
           <p className="mt-4 w-full leading-normal text-frost-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
-            provident incidunt illum assumenda ea minima blanditiis perspiciatis
-            amet aliquam corrupti, iure libero obcaecati esse! In reprehenderit
-            accusamus inventore tempore similique?
+            In 2018 I was a promising cook in the heart of downtown San Diego,
+            receiving an offer from Mister A's renown chef Stephan Voikswinkler
+            to become his apprentice. As much I loved the culinary arts, I had a
+            passion for technology and decided to pursue a career in software
+            development. I enrolled in a coding bootcamp and quickly found
+            myself immersed in the world of web development. I have since worked
+            on a variety of projects, and professionaly for Real Game Athletics
+            building his SPA website.
+          </p>
+          <p className="mt-4 w-full leading-normal text-frost-3">
+            I have been continuing to build my skillset while working side jobs
+            and freelance gigs, with the hope to land a full-time developer role
+            where I can immerse myself in a project, ideally at a start-up with
+            a close-knit team where I can make a meaningful impact and grow as a
+            developer. Currently I am developing the mobile app version for Real
+            Game Athletics, practicing CI/CD pipelines, installing linux on
+            every free device I have, and learning about the world of blockchain
+            and smart contracts. I strongly believe I would be a valuable asset
+            for any team, with my wide range of skills, ability to learn
+            quickly, and my love for working with other.
+          </p>
+          <p className="mt-4 w-full leading-normal text-frost-3">
+            When I am not at the computer, I am testing new recipes in the
+            kitchen, watching movies with my girlfriend, playing soccer/rock
+            climbing, or gaming with my friends on Apex/Counter-Strike.
           </p>
         </section>
         <section
@@ -173,7 +193,7 @@ export default function Home() {
           className="mb-16 scroll-mt-16 md:mb-24 lg:mb-36 lg:scroll-mt-24"
         >
           {/* Projects */}
-          <h2 className="text-sm font-bold uppercase tracking-widest  text-white-1 mb-2">
+          <h2 className="text-xl font-bold uppercase tracking-widest  text-white-1 mb-2">
             PROJECTS
           </h2>
           <ul className="mt-4">
@@ -187,13 +207,14 @@ export default function Home() {
                   className="sm:col-span-2 sm:order-1 sm:translate-y-1"
                 />
                 <div className="sm:col-span-6 sm:order-2">
-                  <h3 className="text-sm font-bold text-white-1">Project</h3>
+                  <h3 className="text-md font-bold text-white-1">
+                    Etchmon Acid VS Code Theme
+                  </h3>
                   <p className="mt-2 text-frost-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat provident incidunt illum assumenda ea minima
-                    blanditiis perspiciatis amet aliquam corrupti, iure libero
-                    obcaecati esse! In reprehenderit accusamus inventore tempore
-                    similique?
+                    A custom VS Code theme using high contrast colors on a dark
+                    theme to emphasize readability and lessen eye strain. It is
+                    available on VS Code MarketPlace and is continually being
+                    worked on.
                   </p>
                   <ul
                     className="mt-2 flex flex-wrap"
@@ -201,7 +222,17 @@ export default function Home() {
                   >
                     <li className="mr-1.5 mt-2">
                       <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
-                        TypeScript
+                        JavaScript
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Node.js
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        CSS
                       </div>
                     </li>
                   </ul>
@@ -218,7 +249,9 @@ export default function Home() {
                   className="sm:col-span-2 sm:order-1 sm:translate-y-1"
                 />
                 <div className="sm:col-span-6 sm:order-2">
-                  <h3 className="text-sm font-bold text-white-1">Project</h3>
+                  <h3 className="text-md font-bold text-white-1">
+                    Real Game Athletics App
+                  </h3>
                   <p className="mt-2 text-frost-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Repellat provident incidunt illum assumenda ea minima
@@ -250,7 +283,9 @@ export default function Home() {
                 />
 
                 <div className="sm:col-span-6 sm:order-2">
-                  <h3 className="text-sm font-bold text-white-1">Project</h3>
+                  <h3 className="text-md font-bold text-white-1">
+                    Jamesetchells.com
+                  </h3>
                   <p className="mt-2 text-frost-3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Repellat provident incidunt illum assumenda ea minima

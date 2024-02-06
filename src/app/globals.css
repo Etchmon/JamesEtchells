@@ -4,16 +4,16 @@
 
 /* Fonts */
 @font-face {
-  font-family: "Julius Sans One";
-  src: url("../../public/fonts/JuliusSansOne-Regular.ttf") format("truetype");
+  font-family: "Cinzel";
+  src: url("../../public/fonts/Cinzel-Medium.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: "Crimson Text";
-  src: url("../../public/fonts/CrimsonText-Regular.ttf") format("truetype");
+  font-family: "Fauna One";
+  src: url("../../public/fonts/FaunaOne-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -58,7 +58,7 @@
 }
 
 body {
-  font-family: "Crimson Text", serif;
+  font-family: "Fauna One", serif;
 
   background-image: url("/images/ign_dudeOnBuilding3.png");
   background-attachment: fixed;
@@ -85,7 +85,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Julius Sans One", sans-serif;
+  font-family: "Cinzel", sans-serif;
 }
 
 @keyframes pan-image {
