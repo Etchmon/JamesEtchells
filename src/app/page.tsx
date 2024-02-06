@@ -165,22 +165,28 @@ export default function Home() {
             receiving an offer from Mister A's renown chef Stephan Voikswinkler
             to become his apprentice. As much I loved the culinary arts, I had a
             passion for technology and decided to pursue a career in software
-            development. I enrolled in a coding bootcamp and quickly found
-            myself immersed in the world of web development. I have since worked
-            on a variety of projects, and professionaly for Real Game Athletics
-            building his SPA website.
+            development.
+          </p>
+          <p className="mt-4 w-full leading-normal text-frost-3">
+            I enrolled in a coding bootcamp and quickly found myself immersed in
+            the world of web development. I have since worked on a variety of
+            projects, and professionaly for Real Game Athletics building his SPA
+            website.
           </p>
           <p className="mt-4 w-full leading-normal text-frost-3">
             I have been continuing to build my skillset while working side jobs
             and freelance gigs, with the hope to land a full-time developer role
             where I can immerse myself in a project, ideally at a start-up with
             a close-knit team where I can make a meaningful impact and grow as a
-            developer. Currently I am developing the mobile app version for Real
-            Game Athletics, practicing CI/CD pipelines, installing linux on
-            every free device I have, and learning about the world of blockchain
-            and smart contracts. I strongly believe I would be a valuable asset
-            for any team, with my wide range of skills, ability to learn
-            quickly, and my love for working with other.
+            developer.
+          </p>
+          <p className="mt-4 w-full leading-normal text-frost-3">
+            Currently I am developing the mobile app version for Real Game
+            Athletics, practicing CI/CD pipelines, installing linux on every
+            free device I have, and learning about the world of blockchain and
+            smart contracts. I strongly believe I would be a valuable asset for
+            any team, with my wide range of skills, ability to learn quickly,
+            and my love for working with others.
           </p>
           <p className="mt-4 w-full leading-normal text-frost-3">
             When I am not at the computer, I am testing new recipes in the
@@ -287,11 +293,11 @@ export default function Home() {
                     Jamesetchells.com
                   </h3>
                   <p className="mt-2 text-frost-3">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat provident incidunt illum assumenda ea minima
-                    blanditiis perspiciatis amet aliquam corrupti, iure libero
-                    obcaecati esse! In reprehenderit accusamus inventore tempore
-                    similique?
+                    My personal website, deployed on Cloudflare Pages with DNS
+                    redirects to my custom domain name. Developed using Next.js
+                    and Tailwind CSS and implements a GitHub Actions CI/CD
+                    pipepline that triggers on successful PR merges and deploys
+                    to production using Wrangler.
                   </p>
                   <ul
                     className="mt-2 flex flex-wrap"
@@ -300,6 +306,36 @@ export default function Home() {
                     <li className="mr-1.5 mt-2">
                       <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
                         TypeScript
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Next.js
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Tailwind CSS
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Node.js
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Cloudflare
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Wrangler
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        GitHub Actions
                       </div>
                     </li>
                   </ul>
