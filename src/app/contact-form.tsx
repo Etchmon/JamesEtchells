@@ -23,13 +23,14 @@ function ContactForm() {
     })
   }
 
-  const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (event: React.FormEvent) => {
     event.preventDefault()
 
     const { name, email, message } = formState
 
     try {
       const response = await fetch("https://jamesetchells.com/email_send", {
+        // Replace with your worker URL
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -38,6 +39,8 @@ function ContactForm() {
       })
 
       const data = await response.json()
+
+      console.log(data)
 
       if (response.status === 200) {
         toast.success(`${formState.name}, your message has been sent!`)
