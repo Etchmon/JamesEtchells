@@ -6,6 +6,10 @@ export const metadata: Metadata = {
   title: "James Etchells | Portfolio",
   description:
     "A website to showcase the work and skill of James Etchells. Built by James Etchells.",
+  icons: {
+    icon: "/images/J.svg",
+    apple: "/images/J.js",
+  },
 }
 
 export default function RootLayout({
