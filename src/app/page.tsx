@@ -262,7 +262,7 @@ export default function Home() {
             <li className="mb-12">
               <div className="relative grid sm:grid-cols-8 pb-1 gap-4 sm:gap-8 md:gap-4">
                 <Image
-                  src="/images/16.png"
+                  src="/images/cbd.png"
                   alt="Placeholder"
                   width={200}
                   height={100}
@@ -271,15 +271,18 @@ export default function Home() {
                 <div className="sm:col-span-6 sm:order-2">
                   <a href="#" className="cursor-pointer">
                     <h3 className="text-md font-bold text-white-1 hover:text-aurora-3 max-w-fit">
-                      Lorem Ipsor
+                      CookBook Digital - Social Media Cookbook
                     </h3>
                   </a>
                   <p className="mt-2 text-frost-3 text-sm">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Repellat provident incidunt illum assumenda ea minima
-                    blanditiis perspiciatis amet aliquam corrupti, iure libero
-                    obcaecati esse! In reprehenderit accusamus inventore tempore
-                    similique?
+                    Explore and Share Recipes with this dynamic Full-Stack
+                    Next.js project designed for culinary enthusiasts. With
+                    Next-Auth integration, users can sign in with custom
+                    credentials or Google accounts to save their favorite
+                    recipes securely on MongoDB. The project serves as a
+                    playground for mastering Next.js functionalities, including
+                    Server-Side functions, while fostering a vibrant community
+                    of food lovers.
                   </p>
                   <ul
                     className="mt-2 flex flex-wrap"
@@ -287,7 +290,42 @@ export default function Home() {
                   >
                     <li className="mr-1.5 mt-2">
                       <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
-                        TypeScript
+                        Next.js
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        React
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Tailwind CSS
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        MongoDB
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Next-Auth
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Vercel
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Mongoose
+                      </div>
+                    </li>
+                    <li className="mr-1.5 mt-2">
+                      <div className="rounded-full flex items-center bg-dark-3 px-3 py-1 text-xs font-medium leading-5 text-aurora-3">
+                        Node
                       </div>
                     </li>
                   </ul>
