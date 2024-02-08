@@ -206,7 +206,7 @@ export default function Home() {
             <li className="mb-12">
               <div className="relative grid sm:grid-cols-8 pb-1 gap-4 sm:gap-8 md:gap-4">
                 <Image
-                  src="/images/10.png"
+                  src="/images/etchmon-acid.png"
                   alt="Placeholder"
                   width={200}
                   height={100}
@@ -256,7 +256,7 @@ export default function Home() {
                 />
                 <div className="sm:col-span-6 sm:order-2">
                   <h3 className="text-md font-bold text-white-1">
-                    Real Game Athletics App
+                    Lorem Ipsor
                   </h3>
                   <p className="mt-2 text-frost-3 text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
