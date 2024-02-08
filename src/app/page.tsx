@@ -49,7 +49,7 @@ export default function Home() {
       <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 relative">
         {/* Header */}
         <div>
-          <h1 className="sm:text-4xl md:text-5xl font-bold tracking-tight text-white-1">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-white-1">
             James Etchells
           </h1>
           <h2 className="sm:text-xl md:text-3xl  mt-3 font-medium tracking-tight text-white-2">
@@ -59,6 +59,9 @@ export default function Home() {
             I build full-stack applications, create CI/CD pipelines, and love
             linux.
           </p>
+          <h3 className="mt-4 font-medium tracking-tight text-dark-4">
+            Arch Linux User
+          </h3>
         </div>
         <ul className="ml-1 mt-8 flex items-center text-frost-3">
           {/* Social Media Links */}
@@ -105,7 +108,7 @@ export default function Home() {
           </li>
           <li className="mr-5 text-xs">
             <a
-              href="#"
+              href="https://www.instagram.com/jawetchells/"
               className="block hover:text-aurora-3"
               target="_blank"
               rel="noreferrer noopener"
@@ -160,27 +163,33 @@ export default function Home() {
           <h2 className="text-xl font-bold uppercase tracking-widest  text-white-1">
             ABOUT
           </h2>
-          <p className="mt-4 w-full leading-normal text-frost-3">
+          <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
             In 2018 I was a promising cook in the heart of downtown San Diego,
-            receiving an offer from Mister A's renown chef Stephan Voikswinkler
+            receiving an offer from Mister A's renown chef Stephan Voitzwinkler
             to become his apprentice. As much I loved the culinary arts, I had a
             passion for technology and decided to pursue a career in software
             development.
           </p>
-          <p className="mt-4 w-full leading-normal text-frost-3">
+          <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
             I enrolled in a coding bootcamp and quickly found myself immersed in
             the world of web development. I have since worked on a variety of
-            projects, and professionaly for Real Game Athletics building his SPA
-            website.
+            projects, and professionaly for{" "}
+            <a href="https://realgameathletics.com" target="_blank">
+              <span className="text-white-3 hover:text-aurora-3">
+                {" "}
+                Real Game Athletics
+              </span>
+            </a>{" "}
+            building his SPA website.
           </p>
-          <p className="mt-4 w-full leading-normal text-frost-3">
+          <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
             I have been continuing to build my skillset while working side jobs
             and freelance gigs, with the hope to land a full-time developer role
             where I can immerse myself in a project, ideally at a start-up with
             a close-knit team where I can make a meaningful impact and grow as a
             developer.
           </p>
-          <p className="mt-4 w-full leading-normal text-frost-3">
+          <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
             Currently I am developing the mobile app version for Real Game
             Athletics, practicing CI/CD pipelines, installing linux on every
             free device I have, and learning about the world of blockchain and
@@ -188,7 +197,7 @@ export default function Home() {
             any team, with my wide range of skills, ability to learn quickly,
             and my love for working with others.
           </p>
-          <p className="mt-4 w-full leading-normal text-frost-3">
+          <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
             When I am not at the computer, I am testing new recipes in the
             kitchen, watching movies with my girlfriend, playing soccer/rock
             climbing, or gaming with my friends on Apex/Counter-Strike.
@@ -213,9 +222,14 @@ export default function Home() {
                   className="sm:col-span-2 sm:order-1 sm:translate-y-1"
                 />
                 <div className="sm:col-span-6 sm:order-2">
-                  <h3 className="text-md font-bold text-white-1">
-                    Etchmon Acid VS Code Theme
-                  </h3>
+                  <a
+                    href="https://marketplace.visualstudio.com/items?itemName=etchmon-dev.etchmon-acid"
+                    className="cursor-pointer"
+                  >
+                    <h3 className="text-md font-bold text-white-1 hover:text-aurora-3 max-w-fit">
+                      Etchmon Acid VS Code Theme
+                    </h3>
+                  </a>
                   <p className="mt-2 text-frost-3 text-sm">
                     A custom VS Code theme using high contrast colors on a dark
                     theme to emphasize readability and lessen eye strain. It is
@@ -255,9 +269,11 @@ export default function Home() {
                   className="sm:col-span-2 sm:order-1 sm:translate-y-1"
                 />
                 <div className="sm:col-span-6 sm:order-2">
-                  <h3 className="text-md font-bold text-white-1">
-                    Lorem Ipsor
-                  </h3>
+                  <a href="#" className="cursor-pointer">
+                    <h3 className="text-md font-bold text-white-1 hover:text-aurora-3 max-w-fit">
+                      Lorem Ipsor
+                    </h3>
+                  </a>
                   <p className="mt-2 text-frost-3 text-sm">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Repellat provident incidunt illum assumenda ea minima
@@ -281,7 +297,7 @@ export default function Home() {
             <li className="mb-12">
               <div className="relative grid sm:grid-cols-8 pb-1 gap-4 sm:gap-8 md:gap-4">
                 <Image
-                  src="/images/39.png"
+                  src="/images/homepage.png"
                   alt="Placeholder"
                   width={200}
                   height={100}
@@ -289,9 +305,15 @@ export default function Home() {
                 />
 
                 <div className="sm:col-span-6 sm:order-2">
-                  <h3 className="text-md font-bold text-white-1">
-                    Jamesetchells.com
-                  </h3>
+                  <a
+                    href="jamesetchells.com"
+                    target="_blank"
+                    className="cursor-pointer"
+                  >
+                    <h3 className="text-md font-bold text-white-1 hover:text-aurora-3 max-w-fit">
+                      jamesetchells.com
+                    </h3>
+                  </a>
                   <p className="mt-2 text-frost-3 text-sm">
                     My personal website, deployed on Cloudflare Pages with DNS
                     redirects to my custom domain name. Developed using Next.js
@@ -354,7 +376,7 @@ export default function Home() {
           </h2> */}
         {/* <ContactForm /> */}
         {/* </section> */}
-        <footer className="sm:pb-1 pb-16 text-xs text-frost-3 max-w-md">
+        <footer className="pb-1 md:pb-12 text-xs text-frost-3 max-w-md mx-auto">
           {/* Footer */}
           <p>
             Design loosly based off every other portfolio website, coded in
@@ -362,15 +384,15 @@ export default function Home() {
             deployed via CI/CD pipeline using Github Actions and Wrangler to
             Cloudflare Pages. Fonts used are Julius Sans One and Crimson Text.
           </p>
+          <Image
+            src="/images/J.svg"
+            alt="Placeholder"
+            width={30}
+            height={30}
+            className="absolute animate-pulse bottom-5 right-5 md:bottom-10 md:right-10"
+          ></Image>
         </footer>
       </article>
-      {/* <Image
-        src="/images/etch.jpeg"
-        alt="Placeholder"
-        width={30}
-        height={30}
-        className="absolute bottom-0 right-0 animate-pulse sm:bottom-10 sm:right-10"
-      ></Image> */}
     </main>
   )
 }
