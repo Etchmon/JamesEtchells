@@ -225,6 +225,10 @@ export default function Home() {
                   <a
                     href="https://marketplace.visualstudio.com/items?itemName=etchmon-dev.etchmon-acid"
                     className="cursor-pointer"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="Etchmon Acid (opens in a new tab)"
+                    title="Etchmon Acid"
                   >
                     <h3 className="text-md font-bold text-white-1 hover:text-aurora-3 max-w-fit">
                       Etchmon Acid VS Code Theme
@@ -269,7 +273,14 @@ export default function Home() {
                   className="sm:col-span-2 sm:order-1 sm:translate-y-1"
                 />
                 <div className="sm:col-span-6 sm:order-2">
-                  <a href="#" className="cursor-pointer">
+                  <a
+                    href="https://nextjs-cookbook-cngdvy0e5-etchmon.vercel.app/"
+                    className="cursor-pointer"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    aria-label="CookBook Digital (opens in a new tab)"
+                    title="CookBook Digital"
+                  >
                     <h3 className="text-md font-bold text-white-1 hover:text-aurora-3 max-w-fit">
                       CookBook Digital - Social Media Cookbook
                     </h3>
