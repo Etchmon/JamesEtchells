@@ -88,7 +88,7 @@ export default function Home() {
           </li>
           <li className="mr-5 text-xs">
             <a
-              href="#"
+              href="https://www.linkedin.com/in/james-etchells-240816164/"
               className="block hover:text-aurora-3"
               target="_blank"
               rel="noreferrer noopener"
@@ -164,7 +164,7 @@ export default function Home() {
             ABOUT
           </h2>
           <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
-            In 2018 I was a promising cook in the heart of downtown San Diego,
+            In 2018, I was a promising cook in the heart of downtown San Diego,
             receiving an offer from Mister A's renown chef Stephan Voitzwinkler
             to become his apprentice. As much I loved the culinary arts, I had a
             passion for technology and decided to pursue a career in software
@@ -173,21 +173,20 @@ export default function Home() {
           <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
             I enrolled in a coding bootcamp and quickly found myself immersed in
             the world of web development. I have since worked on a variety of
-            projects, and professionaly for{" "}
+            projects, most notably, building an SPA for
             <a href="https://realgameathletics.com" target="_blank">
               <span className="text-white-3 hover:text-aurora-3">
                 {" "}
                 Real Game Athletics
               </span>
             </a>{" "}
-            building his SPA website.
+            .
           </p>
           <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
-            I have been continuing to build my skillset while working side jobs
-            and freelance gigs, with the hope to land a full-time developer role
-            where I can immerse myself in a project, ideally at a start-up with
-            a close-knit team where I can make a meaningful impact and grow as a
-            developer.
+            I have been continually expanding my skillset with the goal of
+            landing a full-time developer role. Ideally, I'd like to work at a
+            start-up with a close-knit team so that I can immerse myself in a
+            project, make a meaningful impact, and grow with the company.
           </p>
           <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
             Currently I am developing the mobile app version for Real Game
@@ -428,10 +427,9 @@ export default function Home() {
         <footer className="pb-1 md:pb-12 text-xs text-frost-3 max-w-md mx-auto">
           {/* Footer */}
           <p>
-            Design loosly based off every other portfolio website, coded in
-            Visual Studio Code by me. Built with Next.js and Tailwind CSS,
-            deployed via CI/CD pipeline using Github Actions and Wrangler to
-            Cloudflare Pages. Fonts used are Julius Sans One and Crimson Text.
+            Built with Next.js and Tailwind CSS, deployed via CI/CD pipeline
+            using Github Actions and Wrangler to Cloudflare Pages. Fonts used
+            are Julius Sans One and Crimson Text.
           </p>
           <Image
             src="/images/J.svg"
