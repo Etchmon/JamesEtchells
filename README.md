@@ -50,7 +50,7 @@
 
 <!-- About the Project -->
 ## :star2: About the Project
-
+My personal portfolio website that showcases my projects, skills and experience.
 
 <!-- Screenshots -->
 ### :camera: Screenshots
@@ -62,6 +62,13 @@
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
+Buit with the following technologies:
+- React
+- Next.js
+- TailwindCSS
+- TypeScript
+- Cloudflare Pages
+- GitHub Actions
 
 <details>
   <summary>Client</summary>
