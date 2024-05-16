@@ -128,7 +128,7 @@ export default function Home() {
           </li>
           <li className="mr-5 text-xs">
             <a
-              href="/resume/jamesetchells_resume.pdf"
+              href="/resume/JamesEtchells_Resume.pdf"
               className="block hover:text-aurora-3"
               target="_blank"
               rel="noreferrer noopener"
