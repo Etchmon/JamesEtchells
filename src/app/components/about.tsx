@@ -9,42 +9,31 @@ export const About = () => {
         ABOUT
       </h2>
       <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
-        In 2018, I was a promising cook in the heart of downtown San Diego,
-        receiving an offer from Mister A's renown chef Stephan Voitzwinkler to
-        become his apprentice. As much I loved the culinary arts, I had a
-        passion for technology and decided to pursue a career in software
-        development.
+        Hey there, my name is James Etchells as you can probably tell by now. I
+        have 2 years of experience in frontend development as a contract worker,
+        and have received a certificate in Full Stack Web Development from UCSD
+        Extension. I have a passion for learning and continue to teach myself
+        new skills and technologies, with a special place in my heart for IT
+        hardware and Linux.
       </p>
       <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
-        I enrolled in a coding bootcamp and quickly found myself immersed in the
-        world of web development. I have since worked on a variety of projects,
-        most notably, building an SPA for
-        <a href="https://realgameathletics.com" target="_blank">
-          <span className="text-white-3 hover:text-aurora-3">
-            {" "}
-            Real Game Athletics
-          </span>
-        </a>{" "}
-        .
+        Since gaining experience as a frontend developer, I desire to work with
+        more areas within the tech industry and learn as much as I can. One way
+        I do this one my own is with my HomeLab that I built out of old pc
+        parts. I leverage the power of VM's and Docker Containers with a Proxmox
+        server to test out new technologies, host my own personal cloud storage
+        and media server, and run docker containers to create vpn tunnels and
+        reverse proxies to keep my network secure.
       </p>
       <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
-        I have been continually expanding my skillset with the goal of landing a
-        full-time developer role. Ideally, I'd like to work at a start-up with a
-        close-knit team so that I can immerse myself in a project, make a
-        meaningful impact, and grow with the company.
+        I also host my own PostgreSQL and MongoDB databases as Docker containers
+        to store data for personal projects and simulate production
+        environments. Currently looking into adding minIO object storage to
+        emulate an amazon S3 bucket and store photo's and other assets for
+        personal projects.
       </p>
       <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
-        Currently I am developing the mobile app version for Real Game
-        Athletics, practicing CI/CD pipelines, installing linux on every free
-        device I have, and learning about the world of blockchain and smart
-        contracts. I strongly believe I would be a valuable asset for any team,
-        with my wide range of skills, ability to learn quickly, and my love for
-        working with others.
-      </p>
-      <p className="text-sm md:text-base mt-4 w-full leading-normal text-frost-3">
-        When I am not at the computer, I am testing new recipes in the kitchen,
-        watching movies with my girlfriend, playing soccer/rock climbing, or
-        gaming with my friends on Apex/Counter-Strike.
+        The perfect addition to your dev team!
       </p>
     </section>
   )
