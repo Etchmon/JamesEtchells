@@ -9,11 +9,11 @@ export const Header = () => {
           James Etchells
         </h1>
         <h2 className="sm:text-xl md:text-3xl  mt-3 font-medium tracking-tight text-white-2">
-          Frontend Developer with a passion for IT and Linux
+          Frontend Developer
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-frost-3">
           Curious about everything in tech, I am always teaching myself new
-          skills and technologies. I am currently seeking new opportunities to
+          skills and technologies. Currently seeking new opportunities to
           further challange myself and grow as a developer. Let's connect!
         </p>
         <h3 className="mt-4 font-medium tracking-tight text-dark-4">
