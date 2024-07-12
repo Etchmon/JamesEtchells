@@ -1,3 +1,5 @@
+import Image from "next/image"
+
 export const Header = () => {
   return (
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 relative">
@@ -7,16 +9,24 @@ export const Header = () => {
           James Etchells
         </h1>
         <h2 className="sm:text-xl md:text-3xl  mt-3 font-medium tracking-tight text-white-2">
-          Full-Stack Developer
+          Frontend Developer with a passion for IT and Linux
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-frost-3">
-          I build full-stack applications, create CI/CD pipelines, and love
-          linux.
+          Curious about everything in tech, I am always teaching myself new
+          skills and technologies. I am currently seeking new opportunities to
+          further challange myself and grow as a developer. Let's connect!
         </p>
         <h3 className="mt-4 font-medium tracking-tight text-dark-4">
           Arch Linux User
         </h3>
       </div>
+      <Image
+        src="/images/portrait.jpg"
+        alt="Portrait of James Etchells"
+        width={250}
+        height={250}
+        className="rounded-md"
+      />
       <ul className="ml-1 mt-8 flex items-center text-frost-3">
         {/* Social Media Links */}
         <li className="mr-5 text-xs shrink-0">

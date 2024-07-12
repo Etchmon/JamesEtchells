@@ -19,7 +19,14 @@
 </div>
 
 <br />
+<!-- Screenshots -->
+### :camera: Screenshots
 
+<div align="center"> 
+  <img src="./public/images/jamesetchells.com.png" alt="screenshot" />
+</div>
+
+<br />
 <!-- Table of Contents -->
 # :notebook_with_decorative_cover: Table of Contents
 
@@ -45,13 +52,6 @@
 ## :star2: About the Project
 My personal portfolio website that showcases my projects, skills and experience.
 
-<!-- Screenshots -->
-### :camera: Screenshots
-
-<div align="center"> 
-  <img src="./public/images/jamesetchells.com.png" alt="screenshot" />
-</div>
-
 
 <!-- TechStack -->
 ### :space_invader: Tech Stack
@@ -62,6 +62,7 @@ Buit with the following technologies:
 - TypeScript
 - Cloudflare Pages
 - GitHub Actions
+- Jenkins
 
 <details>
   <summary>Client</summary>
@@ -76,9 +77,8 @@ Buit with the following technologies:
 <details>
 <summary>DevOps</summary>
   <ul>
-    <li><a href="https://www.docker.com/">Docker</a></li>
+    <li><a href="https://www.github.com/">GitHub Actions</a></li>
     <li><a href="https://www.jenkins.io/">Jenkins</a></li>
-    <li><a href="https://circleci.com/">CircleCLI</a></li>
   </ul>
 </details>
 
@@ -89,35 +89,6 @@ Buit with the following technologies:
 - Backgroud animation
 - Responsive design
 
-<!-- Color Reference -->
-### :art: Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Primary Color | ![#222831](https://via.placeholder.com/10/222831?text=+) #222831 |
-| Secondary Color | ![#393E46](https://via.placeholder.com/10/393E46?text=+) #393E46 |
-| Accent Color | ![#00ADB5](https://via.placeholder.com/10/00ADB5?text=+) #00ADB5 |
-| Text Color | ![#EEEEEE](https://via.placeholder.com/10/EEEEEE?text=+) #EEEEEE |
-
-<!-- Getting Started -->
-## 	:toolbox: Getting Started
-
-<!-- Prerequisites -->
-### :bangbang: Prerequisites
-
-
-
-
-<!-- Tech Description -->
-## :eyes: Technical Details
-
-
-<!-- Roadmap -->
-## :compass: Roadmap
-
-* [ ] Add Picture to main page
-* [ ] Refactor components into layout and ui folders
-* [ ] Add tests to check if links and images load correctly
 
 <!-- Contact -->
 ## :handshake: Contact
@@ -126,6 +97,12 @@ James Etchells - etch@jamesetchells.com
 
 Project Link: [https://github.com/Etchmon/jamesetchells](https://github.com/Etchmon/jamesetchells)
 
+<!-- Roadmap -->
+## :compass: Roadmap
+
+* [ ] Add Picture to main page
+* [ ] Refactor components into layout and ui folders
+* [ ] Add tests to check if links and images load correctly
 
 <!-- Acknowledgments -->
 ## :gem: Acknowledgements
