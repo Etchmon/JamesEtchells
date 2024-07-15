@@ -21,7 +21,7 @@ export const Header = () => {
         alt="Portrait of James Etchells"
         width={250}
         height={250}
-        className="lg:relative rounded-md mt-8 sm:absolute sm:top-0 sm:right-5 sm:mt-0"
+        className="lg:relative rounded-md mt-8 md:right-0 sm:absolute sm:top-0 sm:right-5 sm:mt-0"
       />
       <ul className="ml-1 mt-8 flex items-center text-frost-3">
         {/* Social Media Links */}
