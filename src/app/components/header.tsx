@@ -12,20 +12,16 @@ export const Header = () => {
           Frontend Developer
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-frost-3">
-          Curious about everything in tech, I am always teaching myself new
-          skills and technologies. Currently seeking new opportunities to
-          further challange myself and grow as a developer. Let's connect!
+          A curious minded individual and lifelong learner. Seeking new
+          opportunities to further challange myself and grow as a developer.
         </p>
-        <h3 className="mt-4 font-medium tracking-tight text-dark-4">
-          Arch Linux User
-        </h3>
       </div>
       <Image
         src="/images/portrait.jpg"
         alt="Portrait of James Etchells"
         width={250}
         height={250}
-        className="rounded-md"
+        className="lg:relative rounded-md mt-8 sm:absolute sm:top-0 sm:right-5 sm:mt-0"
       />
       <ul className="ml-1 mt-8 flex items-center text-frost-3">
         {/* Social Media Links */}
