@@ -12,7 +12,7 @@ export const Header = () => {
           Frontend Developer
         </h2>
         <p className="mt-4 max-w-xs leading-normal text-frost-3">
-          A curious minded individual and lifelong learner. Seeking new
+          A curious minded individual who loves to fix things. Seeking new
           opportunities to further challange myself and grow as a developer.
         </p>
       </div>
