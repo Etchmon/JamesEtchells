@@ -9,24 +9,22 @@ export const About = () => {
         ABOUT
       </h2>
       <p className="text-md md:text-base mt-4 w-full leading-normal text-frost-3">
-        Hey there, my name is James Etchells as you can probably tell by now. I
-        have 2 years of experience in frontend development as a contract worker,
-        and have received a certificate in Full Stack Web Development from UCSD
-        Extension. I have a passion for learning and continue to teach myself
-        new skills and technologies, with a special place in my heart for IT
-        hardware and Linux.
+        Hey there, my name is James Etchells. I am a frontend developer with 2
+        YOE freelancing and a certificate in Full Stack Web Development from
+        UCSD extension. Currently I am working as a Personal Trainer, while I
+        continue to improve my skills as a developer. I am hungry for the
+        opportunity to work on challenging projects and be apart of a close-knit
+        team.
       </p>
       <p className="text-md md:text-base mt-4 w-full leading-normal text-frost-3">
-        Since gaining experience as a frontend developer, I desire to work with
-        more areas within the tech industry and learn as much as I can. One way
-        I do this one my own is with my HomeLab that I built out of old pc
-        parts. I leverage the power of VM's and Docker Containers with a Proxmox
-        server to test out new technologies, host my own personal cloud storage
-        and media server, and run docker containers to create vpn tunnels and
-        reverse proxies to keep my network secure.
-      </p>
-      <p className="text-md md:text-base mt-4 w-full leading-normal text-frost-3">
-        The perfect addition to your dev team!
+        I have experience building responsive frontends, developing and
+        consuming RESTful API's, planning and implementing database relations
+        for SQL and NoSQL databases, deploying applications to the cloud, making
+        CI/CD pipelines, deploying and managing docker containers, basic
+        networking principles and DNS, working with GIT for version control,
+        creating reverse proxies with NGINX, configuring firewalls, working with
+        linux servers, system administration fundamentals such as user
+        management and permissions, and creating and managing virtual machines.
       </p>
     </section>
   )
